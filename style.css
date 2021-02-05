@@ -458,18 +458,63 @@ a[data-lightbox]:hover img{
 	stroke-linecap:round;
 }
 
-/* Framless */
-.frameless-lb{
+/* Full Screen */
+.fullscreen-lb{
+	background:#000;
 	border-radius: 0;
-	border:none;
 }
-.frameless-lb .modal-body{
+.fullscreen-lb .modal-body{
 	padding:0;
 }
-.frameless-lb .lightbox-caption{
+.fullscreen-lb .lightbox-caption{
 	left:0;
 	right:0;
-	bottom:-16px;
+	bottom:-10px;
+	text-align:center;
+}
+.fullscreen-modal{
+	background:#000;
+}
+.fullscreen-modal .modal-dialog{
+	width:100%!important;
+	max-width:95%!important;
+}
+
+/* Modal Full Screen Close Button */
+.close-full-screen-modal{
+	position: fixed;
+	display: block;
+	width: 25px;
+	height:25px;
+	top:16px;
+	right:10px;
+	z-index: 10000;
+}
+.close-full-screen-modal .close-icon{
+	display: block;
+	width:100%;
+	height:1px;
+	background: #fff;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-top:12px;
+}
+.close-full-screen-modal .close-icon{
+	height:2px;
+}
+.close-full-screen-modal .close-icon:after{
+	content:"";
+	display:inherit;
+	width:inherit;
+	height:inherit;
+	background: inherit;
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.close-full-screen-modal{
+	right:20px;
 }
 
 /* = Custom Styling
@@ -825,6 +870,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.h4-17-style{
 		font-size:20px;
+	}
+	.img-bloc-6-style{
+		height:405px;
 	}
 	
 }
